@@ -1,8 +1,8 @@
 body{
-    font-family: 'MyFont';
+    font-family:'Baloo 2', cursive;;
     background: pink;
     color: grey;
-    font-size: 20px;
+    font-size:calc(16px + 0.5vw);;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -10,7 +10,8 @@ body{
 header{
     background-color:#fff0f5;;
     color:grey;
-    text-align:center;
+    text-align:left;
+    padding-left: 30px;
 }
 .container {
   display: flex;
@@ -21,17 +22,6 @@ header{
   width: fit-content;
   display: flex;
   flex-direction: column;
-}
-@media (max-width: 750px) {
-    .navbar {
-        background-color:#fff0f5;
-        width: 100%;
-        display: flex;
-        flex-direction:row;
-        justify-content: space-around;
-        max-width: none;
-        flex-wrap: wrap;
-    }
 }
 
 .navbar ul {
@@ -74,3 +64,49 @@ footer {
 .tr{
     text-align: center;
 }
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .navbar li {
+        flex: 1;
+        margin: 0 2px;
+        padding: 15px 5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main{
+        background-color:white;
+        flex: 1;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        background-color:#fff0f5;;
+        color:grey;
+        text-align:center;
+    }
+}
+.mainHome{
+    background-color:white;
+    flex: 1;
+    padding: 0px 10px 10px 10px;
+}
+
+
