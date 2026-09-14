@@ -1,10 +1,6 @@
 
-@font-face {
-    font-family: 'MyFont';
-    src: url('./font/Lemon Slice.otf') format('opentype');
-}
 body{
-    font-family: 'MyFont';
+    font-family: 'Baloo 2', cursive;
     background: pink;
     color: grey;
     font-size: 20px;
@@ -22,22 +18,28 @@ nav{
     display: flex;
     flex-direction: column;
 }
-.container{
+.container {
     display: flex;
-    flex:1;
+    align-items: stretch; /* ทำให้ทุก column มีความสูงเท่ากันตาม column ที่สูงที่สุด */
 }
-.navbar{
-    background-color:#fff0f5;;
-    width: 250px;
+.navbar {
+    background-color: #fff0f5;
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    height: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar li{
-    background-color:#F8D7E3;;
+    background-color:#F8D7E3;
     text-align: center;
-    padding: 12px;
+    margin: 10px;
+    padding: 30px;
     display: block;
     color: grey;
     text-decoration: none;
