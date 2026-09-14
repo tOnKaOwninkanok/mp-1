@@ -1,6 +1,5 @@
-
 body{
-    font-family: 'Baloo 2', cursive;
+    font-family: 'MyFont';
     background: pink;
     color: grey;
     font-size: 20px;
@@ -14,14 +13,14 @@ header{
     text-align:center;
 }
 .container {
-    display: flex;
-    align-items: stretch; /* ทำให้ทุก column มีความสูงเท่ากันตาม column ที่สูงที่สุด */
+  display: flex;
+  align-items: stretch;
 }
 .navbar {
-    background-color: #fff0f5;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
+  background-color: #fff0f5;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 750px) {
     .navbar {
