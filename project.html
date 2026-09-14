@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>My Project</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./education.html">Education</a></li>
+        <li><a href="./experiences.html">Experiences</a></li>
+        <li><a href="./project.html">Project</a></li>
+        <li><a href="./references.html">References</a></li>
+        <li><a href="./activity.html">Activity</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <div>
+        <h3>Sales Dashboard</h3>
+        <img src="hamster.jpg" alt="This is me" width="300" height="300">
+        <ul>
+            <li>Created a Power BI dashboard using sales data from the accounting team to help
+            the manager track business performance, see progress toward goals, and identify
+            top-selling products and sales reps. The dashboard made it easier to understand
+            overall sales trends and business progress.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Client Solution & Reporting</h3>
+        <img src="hamster.jpg" alt="This is me" width="300" height="300">
+        <ul>
+            <li>Attended client meetings to understand business needs, identified suitable
+            solutions, and prepared summary reports and presentations for managerial review.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Stock Management System Development</h3>
+        <img src="hamster.jpg" alt="This is me" width="300" height="300">
+        <ul>
+            <li>Collaborated in the design and development of a web-based stock management system, integrating Microsoft Dynamics 365 Business Central to streamline inventory tracking, synchronize stock data, and improve the accuracy of product and SKU information.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>NETCUBE Internal Web Portal</h3>
+        <img src="hamster.jpg" alt="This is me" width="300" height="300">
+        <ul>
+            <li>Contributed to the design and development of NETCUBE’s internal web portal, creating a centralized platform that allows employees to access company applications, systems, and resources through a single interface.</li>
+        </ul>
+    </div>
+
+    <div>
+        <input type="text" id="first-number">
+        <input type="text" id="second-number">
+        <button onclick="addition()"> + </button>
+        <button onclick="subtraction()"> - </button>
+        <button onclick="multiplication()">* </button>
+        <button onclick="division()">/ </button>
+        <button onclick="exponentiation()">**</button>
+        <button onclick="clear_data()">Clear </button>
+        <h3 id="output"></h3>
+
+        <script>
+            function addition()
+            {
+                let first = parseFloat(document.getElementById("first-number").value);
+                let second = parseFloat(document.getElementById("second-number").value);
+                let result = first + second;
+                if (result < 0)
+                {
+                    document.getElementById("output").style.color = "red";
+                }
+                else
+                {
+                    document.getElementById("output").style.color = "black";
+                }
+                console.log("this is the result " + result);
+                document.getElementById("output").innerHTML=String(result);
+            }
+            function subtraction()
+            {
+                let first = parseFloat(document.getElementById("first-number").value);
+                let second = parseFloat(document.getElementById("second-number").value);
+                let result = first - second;
+                if (result < 0)
+                {
+                    document.getElementById("output").style.color = "red";
+                }
+                else
+                {
+                    document.getElementById("output").style.color = "black";
+                }
+                console.log("this is the result " + result);
+                document.getElementById("output").innerHTML=String(result);
+            }
+
+            function multiplication()
+            {
+                let first = parseFloat(document.getElementById("first-number").value);
+                let second = parseFloat(document.getElementById("second-number").value);
+                let result = first * second;
+                if (result < 0)
+                {
+                    document.getElementById("output").style.color = "red";
+                }
+                else
+                {
+                    document.getElementById("output").style.color = "black";
+                }
+                console.log("this is the result " + result);
+                document.getElementById("output").innerHTML=String(result);
+            }
+
+            function division()
+            {
+                let first = parseFloat(document.getElementById("first-number").value);
+                let second = parseFloat(document.getElementById("second-number").value);
+                let result = first/second;
+                if (result < 0)
+                {
+                    document.getElementById("output").style.color = "red";
+                }
+                else
+                {
+                    document.getElementById("output").style.color = "black";
+                }
+                console.log("this is the result " + result);
+                document.getElementById("output").innerHTML=String(result);
+            }
+            function exponentiation()
+            {
+                let first = parseFloat(document.getElementById("first-number").value);
+                let second = parseFloat(document.getElementById("second-number").value);
+                let result = 1;
+                if(second>=0)
+                {
+
+                    for (let i = 1; i <= second; i++)
+                    {
+                        result = result * first;
+                    }
+
+                }
+                else
+                {
+                    second = second*-1;
+                    for (let i = 1; i <= second; i++)
+                    {
+                        result = result * first;
+
+                    }
+                    result = 1/result;
+                }
+
+                if (result < 0)
+                {
+                    document.getElementById("output").style.color = "red";
+                }
+                else
+                {
+                    document.getElementById("output").style.color = "black";
+                }
+
+                console.log("this is the result " + result);
+                document.getElementById("output").innerHTML=String(result);
+            }
+            function clear_data()
+            {
+                console.log("tonkaow is here");
+                document.getElementById("first-number").value = "";
+                document.getElementById("second-number").value = "";
+                document.getElementById("output").innerHTML="";
+
+            }
+        </script>
+    </div>
+</main>
+
+<footer>
+    <p>All Rights Reserved by TK Poothong <a href ="">Credits</a> &#169</p>
+</footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

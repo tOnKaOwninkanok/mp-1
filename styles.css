@@ -1,0 +1,61 @@
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('./font/Lemon Slice.otf') format('opentype');
+}
+body{
+    font-family: 'MyFont';
+    background: pink;
+    color: grey;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    background-color:#fff0f5;;
+    color:grey;
+    text-align:center;
+}
+nav{
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex:1;
+}
+.navbar{
+    background-color:#fff0f5;;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.navbar li{
+    background-color:#F8D7E3;;
+    text-align: center;
+    padding: 12px;
+    display: block;
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar li a{
+    color:grey;
+    text-decoration: none;
+}
+
+.main{
+    background-color:white;
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    background-color: pink;
+}
