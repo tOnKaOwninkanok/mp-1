@@ -13,11 +13,6 @@ header{
     color:grey;
     text-align:center;
 }
-nav{
-    background: white;
-    display: flex;
-    flex-direction: column;
-}
 .container {
     display: flex;
     align-items: stretch; /* ทำให้ทุก column มีความสูงเท่ากันตาม column ที่สูงที่สุด */
@@ -27,6 +22,17 @@ nav{
     width: fit-content;
     display: flex;
     flex-direction: column;
+}
+@media (max-width: 750px) {
+    .navbar {
+        background-color:#fff0f5;
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        max-width: none;
+        flex-wrap: wrap;
+    }
 }
 
 .navbar ul {
@@ -38,7 +44,7 @@ nav{
 .navbar li{
     background-color:#F8D7E3;
     text-align: center;
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
     padding: 30px;
     display: block;
     color: grey;
@@ -56,8 +62,16 @@ nav{
     padding: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 footer {
     background-color: pink;
+}
+.img{
+    border-radius: 10%;
+}
+.table{
+    border: 1px solid grey;
+}
+.tr{
+    text-align: center;
 }
