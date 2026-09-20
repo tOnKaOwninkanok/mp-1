@@ -56,8 +56,7 @@ header{
 }
 footer {
     background-color:#fff0f5;
-    padding: 10px 15px;
-    width: 100%;
+    padding-left: 30px;
 }
 .img{
     border-radius: 10%;
@@ -126,7 +125,7 @@ footer {
 
 .calculator {
     background-color: #fce8ee;
-    width: 500px;
+    width: 85%;
     margin: 30px auto;
     padding: 30px;
     text-align: center;
