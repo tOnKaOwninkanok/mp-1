@@ -1,15 +1,16 @@
-body{
-    font-family:'Baloo 2', cursive;
+body {
+    font-family: 'Baloo 2', cursive;
     background: pink;
     color: grey;
-    font-size:calc(16px + 0.5vw);;
+    font-size: calc(16px + 0.5vw);;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0px 50px 0px;
+    max-width: 70%;
+    margin: auto;
 }
 header{
-    background-color:#fff0f5;;
+    background-color:#fff0f5;
     color:grey;
     text-align:left;
     padding-left: 30px;
@@ -54,7 +55,9 @@ header{
     flex-direction: column;
 }
 footer {
-    background-color: pink;
+    background-color:#fff0f5;
+    padding: 10px 15px;
+    width: 100%;
 }
 .img{
     border-radius: 10%;
@@ -103,11 +106,69 @@ footer {
         color:grey;
         text-align:center;
     }
+    body {
+        font-family: 'Baloo 2', cursive;
+        background: pink;
+        color: grey;
+        font-size: calc(16px + 0.5vw);;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        max-width: 100%;
+        margin: auto;
+    }
 }
 .mainHome{
     background-color:white;
     flex: 1;
     padding: 0px 10px 10px 10px;
+}
+
+.calculator {
+    background-color: #fce8ee;
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.calculator input {
+    padding: 10px;
+    margin: 5px;
+}
+
+.calculator button {
+    background-color: pink;
+    padding: 10px 20px;
+    margin: 10px 3px;
+    border-radius: 8px;
+}
+
+.calculator h3 {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.project {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.project img {
+    width: 400px;
+    max-width: 50%;
+}
+
+.project p {
+    flex: 1;
+    margin: 0;
+}
+
+.project-title {
+    margin-bottom: 15px;
 }
 
 
