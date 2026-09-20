@@ -1,11 +1,12 @@
 body{
-    font-family:'Baloo 2', cursive;;
+    font-family:'Baloo 2', cursive;
     background: pink;
     color: grey;
     font-size:calc(16px + 0.5vw);;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0px 50px 0px;
 }
 header{
     background-color:#fff0f5;;
